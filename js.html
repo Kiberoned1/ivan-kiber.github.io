@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГЛАВНАЯ СТРАНИЦА</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <script src="js/app.js"></script>
+</head>
+<main class="content" id="main">
+    <h2>страница для работы js</h2>
+
+    <h3>первые кнопки с onclick</h3>
+    <!--  -->
+    </button>
+    <button type="button" onclick="helo()">нажми на меня</button>
+    <!-- кнопка мочистки -->
+    <button type="button" onclick="document.getElementById('example').innerHTML = '' ">стереть</button>
+
+    <p>что такое HTML?</p>
+    <button type="button" onclick="set_text('p1', 'првет')">ответ</button>
+    <p id="p1">абзац 1</p>
+
+    <button type="button" onclick="set_text('p2', 'првет')">ответ 2</button>
+    <p id="p2">gmgm</p>
+
+    <button type="button" onclick="set_text('p3', 'првет')">ответ 3</button>
+    <p id="p3">абзац3</p>
+
+    <h3>работа с формами js</h3>
+    <div class="form">
+
+        <div class="form__item">
+            <div class="form__item-title">
+                E-maii
+            </div>
+            <input type="text" id="email">
+        </div>
+
+        <div class="form__item">
+            <div class="form__item-title">
+                фио
+            </div>
+            <input type="text" id="name">
+        </div>
+
+        <div class="form__item">
+            <div class="form__item-title">
+                телефон
+            </div>
+            <input type="tel" placeholder="+4343444448797979999999999999999999999999999999999999999" id="phone">
+        </div>
+
+        <button type="submit" onclick="submit()">отправить</button>
+        <p id="status"></p>
+    </div>
+
+    <h3>изьенение стилей с помощю js</h3>
+    <h3>измение цвета body</h3>
+    <button type="button" onclick="set_body_color('#FF0000')">красный</button>
+    <button type="button" onclick="set_body_color('#0000FF')">синий</button>
+    <button type="button" onclick="set_body_color('#00FF00')">зелёный</button>
+    <button type="button" onclick="set_body_color('#FFFF00')">жёлтый</button>
+    <button type="button" onclick="set_body_color('#С0С0С0')">обратно</button>
+
+    <div class="form">
+        <div class="form__item">
+            <div class="form__item-title">
+                видите цвет
+            </div>
+            <input type="text" id="color">
+            <div>
+            </div>
+            <button type="button" onclick="input_color()">установить текст</button>
+
+            <h4 id="font_header">измене размер текста</h4>
+            <button type="button" onclick="set_font_size('font_header', '32px')">изменить размер текста</button>
+
+            <div class="form">
+                <div class="form__item">
+                    <div class="form__item-title">
+                        видите размер
+                    </div>
+                    <input type="text" id="font_size">
+                </div>
+                <button type="button" onclick="input_color()">установить текст</button>
+
+                <h3>измененте HTML-атрибутов js</h3>
+                <img src="images/pic_bulboff.gif" alt="" id="lamp">
+                <button type="button" onclick="lampOn()">вкл</button>
+                <button type="button" onclick="lampOff()">выкл</button>
+
+                <h4>удаление тегов с помощю js</h4>
+                <h5 id='title'>ЗАГОЛОВОК</h5>
+                <button type="button" onclick="deleteTitle()">удалить</button>
+
+                <h4>добовление тегов</h4>
+                <div id="buttonList">
+                    <button type="button" onclick="createButton()">создать</button>
+                    <!--  -->
+                    <h4>добовление тегов</h4>
+                    <div id="P">
+                        <button type="P" onclick="createP()">создать</button>
+                        <!--  -->
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <h3>обекты жава скрипт</h3>
+
+        <p id="person"></p>
+        <button type="button" onclick="showPerson()">паказать</button>
+
+        <p id="avto"></p>
+        <button type="button" onclick="showAvto()">паказать</button>
+
+
+        <p id='cat'></p>
+        <>
+
+
+
+</main>
+
+
+<footer>
+    <div class="container">
+        <h3>карта</h3>
+        <div class="footer__map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad96f8dbd098976b7ad75d501dc9f1846c0011f9bb74fea313e503d08a6320b66&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </div>
+        <p>сайт разработан резидентом первой международной школы програмирования Аравийский
+            иван</p>
+    </div>
+</footer>
+
+</html>
+
